@@ -1,1 +1,0 @@
-# bc-wild-salmon-app
