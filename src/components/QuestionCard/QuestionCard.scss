@@ -1,0 +1,29 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgb(246, 248, 246);
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  &__text {
+    text-align: center;
+    padding: 1rem;
+    font-family: "nunito";
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  &__item {
+    background-color: rgb(220, 232, 228);
+    width: 45%;
+    font-family: "nunito";
+    font-weight: 600;
+    border-radius: 15px;
+    border: rgb(125, 135, 128) solid 1px;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+  }
+}
