@@ -1,10 +1,10 @@
 import "./App.scss";
-import QuestionCard from "./Components/QuestionCard/QuestionCard";
+import MainPage from "./pages/MainPage/MainPage";
 
 function App() {
   return (
     <>
-      <QuestionCard />
+      <MainPage />
     </>
   );
 }

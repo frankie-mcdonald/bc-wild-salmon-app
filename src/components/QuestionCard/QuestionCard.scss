@@ -1,14 +1,20 @@
 .question {
   display: flex;
+  height: 50vh;
   flex-direction: column;
-  justify-content: flex-end;
-  background-color: rgb(246, 248, 246);
+  justify-content: space-between;
+  background: linear-gradient(rgb(3, 3, 3, 0.5), rgba(32, 32, 32, 0.1)),
+    url("../../assets/images/underwater.jpg");
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
   padding-bottom: 1rem;
+  margin: 1rem;
   &__text {
     text-align: center;
     padding: 1rem;
     font-family: "nunito";
+    color: white;
   }
   &__list {
     list-style: none;
@@ -17,13 +23,17 @@
     justify-content: space-evenly;
   }
   &__item {
-    background-color: rgb(220, 232, 228);
+    background-color: rgba(4, 40, 3, 0.312);
     width: 45%;
     font-family: "nunito";
     font-weight: 600;
+    color: white;
     border-radius: 15px;
-    border: rgb(125, 135, 128) solid 1px;
+    border: rgb(178, 255, 241) solid 0.5px;
     padding: 1rem 0.5rem;
     margin: 0.5rem 0;
+    &:hover {
+      transform: translateY(0.12rem) translateX(0.12rem);
+    }
   }
 }
