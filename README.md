@@ -7,7 +7,7 @@ A React-based web application dedicated to raising awareness and providing educa
 - 🏞️ Learn about BC’s wild salmon species.
 - 🎮 Interactive quizzes and educational games.
 - 📊 Data and statistics on salmon populations.
-- 🔗 Resources and links for conservation efforts.
+<!-- - 🔗 Resources and links for conservation efforts. -->
 
 ## 🚀 Live Demo
 
@@ -19,7 +19,7 @@ A React-based web application dedicated to raising awareness and providing educa
 
 - **Frontend**: React, Vite, SCSS
 - **Backend**: Node.js, Express
-- **Database**: MySQL
+- **Database**:
 - **Hosting**:
 
 ---
