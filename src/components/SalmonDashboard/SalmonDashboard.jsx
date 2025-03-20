@@ -3,6 +3,7 @@ import axios from "axios";
 import "./SalmonDashboard.scss";
 import backButton from "../../assets/icons/back-button.png";
 import forwardButton from "../../assets/icons/forward.png";
+import exitButton from "../../assets/icons/close.png";
 
 function SalmonDashboard() {
   const baseURL = import.meta.env.VITE_API_URL;
@@ -70,6 +71,12 @@ function SalmonDashboard() {
 
               {selectedSalmon === salmon.id && (
                 <div className="salmon__details">
+                  <img
+                    src={exitButton}
+                    alt="exit button"
+                    className="salmon__icon salmon__icon--exit"
+                    onClick={() => setSelectedSalmon(null)}
+                  />
                   <img
                     src={`${baseURL}${salmon.image}`}
                     alt={salmon.name}
