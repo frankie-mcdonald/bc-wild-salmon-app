@@ -1,0 +1,29 @@
+@mixin animated-outline(
+  $colors:
+    linear-gradient(90deg, #58957e, #59917b, #3b7b62, #095538, #3b7b62, #59917b)
+) {
+  position: relative;
+  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    background: $colors;
+    filter: blur(5px);
+    background-size: 500%;
+    z-index: -1;
+    animation: outlineAnimation 20s linear infinite;
+  }
+}
+@keyframes outlineAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

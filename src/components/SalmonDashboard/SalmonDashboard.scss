@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .salmon {
   // background-color: rgb(21, 23, 21);
   &__list {
@@ -10,11 +12,13 @@
   &__item {
     margin: 0.25rem;
     text-align: center;
-    border: #6a9c89 5px solid;
+    border: #517d6c 2px solid;
+    @include animated-outline;
     background-color: #c1d8c3;
     border-radius: 1.5rem;
     width: 100%;
     font-size: 3rem;
+    padding: 0 1rem;
   }
   &__namecard {
     display: flex;
@@ -26,7 +30,7 @@
     font-size: 2.5rem;
     width: 10rem;
     text-align: left;
-    color: #2c3930;
+    color: #1b251e;
   }
   &__image-card {
     width: 9rem;
@@ -43,9 +47,19 @@
     max-width: 80%;
     height: auto;
   }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
   &__details-list {
     list-style: none;
     text-align: left;
+    width: 80%;
   }
   &__details-item {
     font-size: 1rem;
@@ -55,6 +69,7 @@
     text-align: center;
     margin: 1rem;
     padding: 1rem;
+    @include animated-outline;
   }
   &__text {
     font-size: 1rem;
