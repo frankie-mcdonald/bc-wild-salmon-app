@@ -5,7 +5,7 @@ import SalmonDashboard from "./components/SalmonDashboard/SalmonDashboard";
 function App() {
   return (
     <>
-      <MainPage />
+      {/* <MainPage /> */}
       <SalmonDashboard />
     </>
   );
