@@ -31,16 +31,23 @@ function SalmonDashboard() {
       <ul className="salmon__list">
         {salmonData.map((salmon) => (
           <li key={salmon.id} className="salmon__item">
-            <h1
-              className="salmon__title"
+            <div
+              className="salmon__namecard"
               onClick={() =>
                 setSelectedSalmon(
                   selectedSalmon === salmon.id ? null : salmon.id
                 )
               }
             >
-              {salmon.name}
-            </h1>
+              <h1 className="salmon__title">{salmon.name}</h1>
+              <img
+                src={`${baseURL}${salmon.image}`}
+                alt={`${salmon.name}`}
+                className={`salmon__image-card ${
+                  selectedSalmon === salmon.id ? "salmon__image-card--hide" : ""
+                }`}
+              />
+            </div>
 
             {selectedSalmon === salmon.id && (
               <div className="salmon__details">
