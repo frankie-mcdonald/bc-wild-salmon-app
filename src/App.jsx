@@ -1,12 +1,13 @@
 import "./App.scss";
 import MainPage from "./pages/MainPage/MainPage";
-import SalmonDashboard from "./components/SalmonDashboard/SalmonDashboard";
-
+import SalmonTypes from "./components/SalmonTypes/SalmonTypes";
+import SalmonLifecycle from "./components/Lifecycle/Lifecycle";
 function App() {
   return (
     <>
       {/* <MainPage /> */}
-      <SalmonDashboard />
+      <SalmonTypes />
+      <SalmonLifecycle />
     </>
   );
 }

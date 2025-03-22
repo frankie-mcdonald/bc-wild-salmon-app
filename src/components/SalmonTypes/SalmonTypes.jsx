@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./SalmonDashboard.scss";
+import "./SalmonTypes.scss";
 import backButton from "../../assets/icons/back-button.png";
 import forwardButton from "../../assets/icons/forward.png";
 import exitButton from "../../assets/icons/close.png";
 
-function SalmonDashboard() {
+function SalmonTypes() {
   const baseURL = import.meta.env.VITE_API_URL;
   const [isLoading, setIsLoading] = useState(true);
   const [salmonData, setSalmonData] = useState([]);
@@ -122,4 +122,4 @@ function SalmonDashboard() {
   );
 }
 
-export default SalmonDashboard;
+export default SalmonTypes;
