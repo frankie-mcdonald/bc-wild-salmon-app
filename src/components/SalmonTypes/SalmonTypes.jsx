@@ -32,6 +32,8 @@ function SalmonTypes() {
 
   return (
     <div className="salmon">
+      <h1 className="salmon__header">BC Wild Salmon Types</h1>
+      <p className="salmon__subheader">Click each salmon below to learn more</p>
       <ul className="salmon__list">
         {salmonData.map((salmon) => {
           const details = [

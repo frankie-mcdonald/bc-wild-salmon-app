@@ -1,5 +1,50 @@
 .lifecycle {
-  &__list {
-    border: blue 1px solid;
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+    background-color: #04520d5a;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  &__item {
+    border: rgb(94, 107, 97) 1px solid;
+    background-color: rgb(6, 51, 6);
+    background: linear-gradient(rgb(3, 3, 3, 0.5), rgba(32, 32, 32, 0.1)),
+      url("../../assets/images/underwater.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    height: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__header {
+    font-size: 3rem;
+  }
+  &__image--div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    width: 400px;
+  }
+  &__icon {
+    width: 4rem;
+    margin: 2rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+    background-color: rgba(2, 21, 6, 0.738);
+    border-radius: 1rem;
+    padding: 0.5rem;
   }
 }

@@ -1,6 +1,19 @@
 @use "../../styles/partials/mixins" as *;
 
 .salmon {
+  &__header {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #6f7870;
+    border-radius: 1rem;
+  }
+  &__subheader {
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
   &__list {
     padding: 1rem;
     list-style-type: none;
@@ -85,9 +98,9 @@
     color: white;
   }
   &__details-item {
-    font-size: 1rem;
+    font-size: 1.25rem;
     border: #8baa9e 2.5px solid;
-    background-color: #2e5632;
+    background-color: #0c220e83;
     border-radius: 1rem;
     text-align: center;
     margin: 1rem;
@@ -95,7 +108,7 @@
     @include animated-outline;
   }
   &__text {
-    font-size: 3rem;
+    font-size: 1.75rem;
     color: white;
   }
 }
