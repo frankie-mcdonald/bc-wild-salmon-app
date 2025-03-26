@@ -1,18 +1,21 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .salmon {
+  color: $primary-white;
   &__header {
     text-align: center;
     font-size: 4rem;
     padding: 1rem;
     margin: 1rem;
-    background-color: #6f7870;
-    border-radius: 1rem;
+    background-color: $mid-forest-green;
+    border-radius: 0.5rem;
   }
   &__subheader {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0 0;
   }
   &__list {
     padding: 1rem;
@@ -24,7 +27,7 @@
   &__item {
     margin: 0.25rem;
     text-align: center;
-    border: #517d6c 2.5px solid;
+    border: $border-color 2px solid;
     background: linear-gradient(rgb(3, 3, 3, 0.5), rgba(32, 32, 32, 0.1)),
       url("../../assets/images/underwater.jpg");
     background-position: center;
@@ -35,6 +38,10 @@
     width: 100%;
     font-size: 3rem;
     padding: 0 1rem;
+    margin-bottom: 0.75rem;
+    &:hover {
+      transform: translateY(0.12rem) translateX(0.12rem);
+    }
   }
   &__namecard {
     display: flex;
@@ -51,6 +58,7 @@
   &__image-card {
     width: 9rem;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    animation: swim 8s ease-in-out infinite; // Adjust speed as needed
   }
 
   &__image-card--hide {
@@ -61,7 +69,7 @@
 
   &__image {
     max-width: 80%;
-    height: auto;
+    @include swimming;
   }
   &__info {
     display: flex;
@@ -99,13 +107,12 @@
   }
   &__details-item {
     font-size: 1.25rem;
-    border: #8baa9e 2.5px solid;
-    background-color: #0c220e83;
+    border: $border-color 2px solid;
+    background-color: rgba(2, 21, 6, 0.738);
     border-radius: 1rem;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
-    @include animated-outline;
   }
   &__text {
     font-size: 1.75rem;

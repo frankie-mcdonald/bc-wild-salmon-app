@@ -3,7 +3,7 @@ import QuestionCard from "../../Components/QuestionCard/QuestionCard";
 
 function MainPage() {
   return (
-    <div>
+    <div className="main">
       <QuestionCard />
     </div>
   );
